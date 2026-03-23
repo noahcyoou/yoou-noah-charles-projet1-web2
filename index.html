@@ -4,7 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ChezThéBulles</title>
-    <link rel="stylesheet" href="./media/styles.css">
+    <link rel="stylesheet" href="./assets/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   </head>
 
   <body>
@@ -12,9 +18,14 @@
     <!-- ========= NAVIGATION ========= -->
 
     <header>
-      <section class="navbar">
+      <section id="navbar">
+        
+        <div class="navbarlogo">
+        <img src="./media/img/bubble_chart.svg" alt="" class="navbarlogo__img">
+        <p class="navbar__title">ThéBullesd</p>
+      </div>
+        
         <nav>
-          <p class="navbar__title">ThéBullesd</p>
           <a class="navbar__lien" href="">Accueil</a>
           <a class="navbar__lien" href="">À propos</a>
           <a class="navbar__lien" href="">Nos services</a>
@@ -22,7 +33,7 @@
           <a class="navbar__lien" href="">Témoignage</a>
           <a class="navbar__lien" href="">Nous joindre</a>
         </nav>
-        <button class="nav__btn--primary">Commander</button>
+        <button class="btn--tertiady">Commander</button>
       </section>
     </header>
 
@@ -31,91 +42,103 @@
   <!-- ========= ACCEUIL PRINCIPAL ========= -->
 
     <section id="accueil">
+      <div class="accueil__container">
       <h1 class="accueil__title">ChezThéBulles</h1>
       <p class="accueil__description">
         Découvrez notre sélection de thés maison exquis
       </p>
-      <button class="accueil__btn--primary">En savoir plus</button>
-      <button class="accueil__btn--secondary">Commander maintenant</button>
-      <img src="" alt="image de bubble tea" class="accueil__img" />
+      <div class="accueil__container--button">
+      <button class="accueil__btn--primary btn--primary">En savoir plus</button>
+      <button class="accueil__btn--secondary btn--secondary">Commander maintenant</button>
+    </div>
+    </div>
+    <img src="./media/img/cup.svg" alt="image de bubble tea" class="accueil__img" />
     </section>
 
     <!-- ========= SECTION À PROPOS ========= -->
 
     <section id="apropos">
-      <h1 class="apropos__title--primary">À propos</h1>
-      <p class="apropos__description">
+      <div class="apropos__entete">
+      <h2 class="apropos__title--primary">À propos</h2>
+      <p class="apropos__subtitle">
         Nous sommes passionnés par le thé et souhaitons partager notre amour
-        avec vous!
-      </p>
+        avec vous!</p></div>
 
-    <!-- ========= CARD "NOTRE HISTOIRE" ========= -->
 
+<div class="apropos__container">
       <article class="apropos__card apropos__card--histoire">
-        <img src="" alt="" class="apropos__img" />
-        <h2 class="apropos__title--secondary">Notre histoire</h2>
-        <p class="apropos__description apropos__description--histoire">
+        <img src="./media/img/histoire.svg" alt="petit logo d'une plume qui écrit sur du papier" class="apropos__img--primary" />
+        <div class="apropos__text">
+        <h3 class="apropos__title--secondary">Notre histoire</h3>
+        <p class="apropos__description">
           Chez Thé Bulle, chaque tasse de thé est préparée avec soin.
         </p>
+        <div class="apropos__equipe_container">
+        <img src="./media/img/equipe.svg" alt="cercle gris" class="apropos__img--secondary">
         <p class="apropos__equipe apropos__equipe--histoire">
           L'équipe Thé Bulle
         </p>
+      </div>
+      </div>
       </article>
 
     <!-- ========= CARD "NOS THÉ TANT APPRÉCIÉ" ========= -->
 
       <article class="apropos__card apropos__card--the">
-        <img src="" alt="" class="apropos__img" />
-        <h2 class="apropos__title--secondary">Nos thés tant appréciés</h2>
-        <p class="apropos__description apropos__description--the">
+        <img src="./media/img/the.svg" alt="petit logo d'une tasse de thé" class="apropos__img--primary" />
+        <div class="apropos__text">
+        <h3 class="apropos__title--secondary">Nos thés tant appréciés</h3>
+        <p class="apropos__description">
           Recettes est concoctées avec tout notre coeur.
         </p>
+        <div class="apropos__equipe_container">
+        <img src="./media/img/equipe.svg" alt="cercle gris" class="apropos__img--secondary">
         <p class="apropos__equipe apropos__equipe--the">L'équipe Thé Bulle</p>
-      </article>
-
+      </div>
+      </div>
+    </article>
+</div>
     <!-- ========= CARD "CITATION IMPORTANTE" ========= -->
 
       <article class="apropos__card apropos__card--citation">
-        <img src="" alt="" class="apropos__img" />
-        <h2 class="apropos__title--secondary">Citation importante</h2>
-        <p class="apropos__description apropos__description--citation">
+        <img src="./media/img/citation.svg" alt="petit logo d'un homme qui medite" class="apropos__img--primary" />
+        <div class="apropos__text">
+        <h3 class="apropos__title--secondary">Citation importante</h3>
+        <p class="apropos__description">
           "Le thé a une magie qui unit l'esprit et le cœur."
         </p>
-      </article>
+      </div>
+    </article>
     </section>
 
     <!-- ========= SECTION NOS PORDUITS ========= -->
 
     <section id="produit">
-      <h1 class="produit__title--primary">Nos produits</h1>
-      <div class="produit__container">
+      <h2 class="produit__title--primary">Nos produits</h2>
+      <div class="produit__contenu">
 
     <!-- ========= CARD BUBBLES TEA AU LAIT ========= -->
-
-      <div class="produit__card--bubbletea">
-        <span class="produit__etat produit__etat--bubbletea">À essayer</span>
-        <img
-          src=""
-          alt="Bubble tea au lait"
-          class="produit__img produit__img--bubbletea"
-        />
+      <div class="produit__card produit__card--bubbletea">
+        
         <div class="produit__container produit__container--bubbletea">
-          <h2 class="produit__title--secondary">Bubble Tea au Lait</h2>
+          <div class="produit__img">
+            <span class="produit__etat produit__etat--bubbletea">À essayer</span>
+            <p class="produit__placeholder">Bubble tea au lait</p>
+          </div>
+          <h4 class="produit__title--secondary">Bubble Tea au Lait</h4>
           <p class="produit__description">Délicieux, crémeux et mémorable.</p>
         </div>
       </div>
 
     <!-- ========= CARD THÉ GLACÉ ========= -->
 
-      <div class="produit__card--theglace">
+      <div class="produit__card produit__card--theglace">
+        <div class="produit__img">
         <span class="produit__etat produit__etat--theglace">Populaire</span>
-        <img
-          src=""
-          alt="Thé glacé"
-          class="produit__img produit__img--theglace"
-        />
+      <p class="produit__placeholder">Thé glacé</p>
+      </div>
         <div class="produit__container produit__container--theglace">
-          <h2 class="produit__title--secoundary">Thé Glacé</h2>
+          <h4 class="produit__title--secoundary">Thé Glacé</h4>
           <p class="produit__description">
             Rafraîchissant pour les journées chaudes.
           </p>
@@ -124,34 +147,34 @@
 
     <!-- ========= CARD THÉ AU FRUITS ========= -->
 
-      <div class="produit__card--thefruit">
+      <div class="produit__card produit__card--thefruit">
+         <div class="produit__img">
         <span class="produit__etat produit__etat--thefruit">Fait maison</span>
-        <img
-          src=""
-          alt="Thé glacé aux fruits"
-          class="produit__img produit__img--thefruit"
-        />
+        <p class="produit__placeholder">Thé glacé aux fruits</p>
+      </div>
         <div class="produit__container produit__container--thefruit">
-          <h2 class="produit__title--secoundary">Thé aux Fruits</h2>
+          <h4 class="produit__title--secoundary">Thé aux Fruits</h4>
           <p class="produit__description">
             Une explosion de saveurs en bouche.
           </p>
         </div>
       </div>
-    </div>
+  </div>
     </section>
 
     <!-- ========= SECTION HEURES D'OUVERTURES ========= -->
 
     <section id="heures">
-      <h1 class="heures__title--primary">Heures d'ouvertures</h1>
+      <h2 class="heures__title--primary">Heures d'ouvertures</h2>
       <p class="heures__subtitle">Venez nous rendre visite !</p>
+
+      <div class="heures__contenu">
 
     <!-- ========= LUNDI - VENDRDREDI ========= -->
 
       <div class="heures__container">
         <p class="heures__description--primary">🕔</p>
-        <h2 class="heure__title--secondary">Lundi - Vendredi</h2>
+        <h3 class="heure__title--secondary">Lundi - Vendredi</h3>
         <p class="heures__description--secondary">10h - 22h</p>
       </div>
 
@@ -159,7 +182,7 @@
 
       <div class="heures__container">
         <p class="heures__description--primary">🕔</p>
-        <h2 class="heure__title--secondary">Samedi</h2>
+        <h3 class="heure__title--secondary">Samedi</h3>
         <p class="heures__description--secondary">11h - 23h</p>
       </div>
 
@@ -167,20 +190,25 @@
 
       <div class="heures__container">
         <p class="heures__description--primary">🕔</p>
-        <h2 class="heure__title--secondary">Dimanche</h2>
+        <h3 class="heure__title--secondary">Dimanche</h3>
         <p class="heures__description--secondary">10h - 20h</p>
       </div>
+    </div>
     </section>
 
     <!-- ========= TÉMOIGNAGE ========= -->
 
     <section id="temoignages">
-      <h1 class="temoignages__title--primary">Témoignages</h1>
+      <div class="temoignage__title_container">
+      <h2 class="temoignages__title--primary">Témoignages</h2>
+    </div>
 
     <!-- ========= SOPHIE ========= -->
 
       <div class="temoignages__container">
-        <h2 class="temoignages__title--secondary">Sophie</h2>
+        <div class="temoignages__avatar">
+        <img class="temoignages__img" src="./media/img/avatar.svg" alt="petite avatar d'une persone">
+        <h5 class="temoignages__title--secondary">Sophie</h5></div>
         <p class="temoignages__description">
           Meilleur bubble tea que j'aie jamais goûté !
         </p>
@@ -189,7 +217,9 @@
     <!-- ========= JEAN ========= -->
 
       <div class="temoignages__container">
-        <h2 class="temoignages__title--secondary">Jean</h2>
+        <div class="temoignages__avatar">
+          <img class="temoignages__img" src="./media/img/avatar.svg" alt="petite avatar d'une persone">
+        <h5 class="temoignages__title--secondary">Jean</h5></div>
         <p class="temoignages__description">
           Un endroit agréable pour se détendre.
         </p>
@@ -200,11 +230,15 @@
 
     <section id="equipe">
       <div class="equipe__container--primary">
-        <h1 class="equipe__title">Notre super équipe</h1>
+        <img src="./media/img/super_equipe.svg" alt="avatar de deux personne" class="equipe__img--primary">
+        <div class="equipe__subtitle">
+        
+        <h3 class="equipe__title">Notre super équipe</h2>
         <p class="equipe__description">
           Rencontrez les passionnés derrière Thé Bulle.
         </p>
-        <button class="equipe__btn">Rejoindre notre équipe</button>
+      </div>
+        <button class="equipe__btn btn--tertiady">Rejoindre notre équipe</button>
       </div>
 
       <br />
@@ -214,28 +248,41 @@
         <ul class="equipe__liste">
           
           <!-- ========= ALICE ========= -->
-          <li>
+          <li class="equipe__employer">
+            <img src="./media/img/employer.svg" alt="avatar pour les employers">
+            
+            <div class="equipe__text">
             <p class="equipe__description--employer">Alice – Barista</p>
             <p class="equipe__description--role">Expert en Bubble Tea</p>
+          </div>
           </li>
 
           
           <!-- ========= MAX ========= -->
-          <li>
+          <li class="equipe__employer">
+            <img src="./media/img/employer.svg" alt="avatar pour les employers">
+            <div class="equipe__text">
             <p class="equipe__description--employer">Max – Propriétaire</p>
             <p class="equipe__description--role">Amateur de thé</p>
+          </div>
           </li>
 
           <!-- ========= LUCIE ========= -->
-          <li>
+          <li class="equipe__employer">
+            <img src="./media/img/employer.svg" alt="avatar pour les employers">
+            <div class="equipe__text">
             <p class="equipe__description--employer">Lucie – Gestion</p>
             <p class="equipe__description--role">Votre contact privilégié</p>
+          </div>
           </li>
 
           <!-- ========= THOMAS ========= -->
-          <li>
+         <li class="equipe__employer">
+            <img src="./media/img/employer.svg" alt="avatar pour les employers">
+            <div class="equipe__text">
             <p class="equipe__description--employer">Thomas – Barista</p>
             <p class="equipe__description--role">Créateur de recettes</p>
+          </div>
           </li>
         </ul>
       </div>
@@ -244,76 +291,86 @@
     <!-- ========= SECTION NOS PRIX ========= -->
      
     <section id="prix">
-      <div class="prix__container">
-        <h1 class="prix__title--primary">Nos prix</h1>
+      <div class="prix__container--primary">
+        <h2 class="prix__title--primary">Nos prix</h2>
+        <p class="prix__subtitle">Choisissez votre offre</p>
       </div>
 
     <!-- ========= PETITE TASSE ========= -->
-
-      <div class="prix__content">
-        <h2 class="prix__title--secondary">Petite Tasse</h2>
+<div class="prix__container--secondary">
+      <div class="prix__card">
+        <p class="prix__taille">Petite Tasse</p>
         <p class="prix__valeur">3$</p>
-        <p class="prix__description">Thé classique</p>
+        <p class="prix__etat">Thé classique</p>
       </div>
 
     <!-- ========= MOYENNE TASSE ========= -->
 
-      <div class="prix__content">
-        <h2 class="prix__title--secondary">Moyenne Tasse</h2>
+      <div class="prix__card">
+        <p class="prix__taille">Moyenne Tasse</p>
         <p class="prix__valeur">5$</p>
-        <p class="prix__description">Populaire</p>
+        <p class="prix__etat">Populaire</p>
       </div>
 
     <!-- ========= GRANDE TASSE ========= -->
 
-      <div class="prix__content">
-        <h2 class="prix__title--secondary">Grande Tasse</h2>
+      <div class="prix__card">
+        <p class="prix__taille">Grande Tasse</p>
         <p class="prix__valeur">6$</p>
-        <p class="prix__description">Meilleur choix</p>
+        <p class="prix__etat">Meilleur choix</p>
       </div>
+    </div>
     </section>
 
     <!-- ========= SECTION NOUS JOINDRE ========= -->
 
     <section id="joindre">
       <div class="joindre__container--primary">
-        <h1 class="joindre__title--primary">Nous joindre</h1>
+        <h2 class="joindre__title--primary">Nous joindre</h2>
       </div>
 
       <div class="joindre__container--secondary">
-        <h2 class="joindre__title--secondary">Notre addresse</h2>
+        <div class="joindre__content">
+        <h3 class="joindre__title--secondary">Notre addresse</h3>
         <p class="joindre__description">
           4444 rue des Bulles Montréal, Qc, Canada H5H W4W
         </p>
+      </div>
+
         <img
-          src=""
+          src="./media/img/map.svg"
           alt="image carte/emplacement en ligne"
           class="joindre__img"
         />
+      
+        </div>
         
     <!-- ========= NOUS CONTACTER ========= -->
 
         <ul class="joindre__liste">
-          <h1 class="joindre__title--secondary">Nous contacter</h1>
+          <h3 class="joindre__title--secondary">Nous contacter</h3>
+          <div class="joindre__container--primary">
           <li>
-            <h3 class="joindre__title--tertiary">Votre Nom</h3>
-            <input type="text" placeholder="Entrez votre nom">
+            <h4 class="joindre__title--tertiary">Votre Nom</h4>
+            <input class="joindre__input" type="text" placeholder="Entrez votre nom">
           </li>
 
           <li>
-            <h3 class="joindre__title--tertiary">Votre Email</h3>
-            <input type="text" placeholder="Entrez votre email">
+            <h4 class="joindre__title--tertiary">Votre Email</h4>
+            <input class="joindre__input" type="text" placeholder="Entrez votre email">
           </li>
 
 
           <li>
-            <h3 class="joindre__title--tertiary">Votre Message</h3>
-            <input type="text" placeholder="Entrez votre message">
+            <h4 class="joindre__title--tertiary">Votre Message</h4>
+            <input class="joindre__input" type="text" placeholder="Entrez votre message">
           </li>
-
-          <button class="joindre__btn--primary">Annuler</button>
-          <button class="joindre__btn--secondary">Envoyer</button>
+        </div>
+<div class="joindre__btn_container">
+          <button class="joindre__btn">Annuler</button>
+          <button class="joindre__btn--tertiady btn--tertiady">Envoyer</button>
         </ul>
+      </div>
     </section>
 
     <!-- ========= FOOTER ========= -->
@@ -324,29 +381,28 @@
     <!-- ========= LIEN RAPIDES ========= -->
 
         <div class="footer__contenu footer__contenu--liens">
-          <h1 class="footer__title--primary">Liens rapides</h1>
-          <a class="footer__lien" href="">Accueil</a>
-          <a class="footer__lien" href="">Services</a>
-          <a class="footer__lien" href="">Contact</a>
+          <p class="footer__title--primary">Liens rapides</p>
+          <p class="footer__lien">Accueil, Services, Contact</p>
         </div>
 
-    <!-- ========= À PROPOS DE NOUS ========= -->
+    <!-- ========= À PROPOS DE NOUS ========= --> <div class="separateur"></div>
 
         <div class="footer__contenu footer__contenu--apropos">
-          <h1 class="footer__title--primary">À propos de nous:</h1>
+          <p class="footer__title--primary">À propos de nous:</p>
           <p class="footer__description">Thé Bulle, local de qualité.</p>
         </div>
 
-    <!-- ========= SUIVEZ NOUS ========= -->
+    <!-- ========= SUIVEZ NOUS ========= --> <div class="separateur"></div>
 
-         <div class="footer__contenu footer__contenu--apropos">
-          <h1 class="footer__title--primary">Suivez-nous:</h1>
+         <div class="footer__contenu footer__contenu--suivre">
+          <p class="footer__title--primary">Suivez-nous:</p>
           <p class="footer__description">[x] [f] [t] [i]</p>
         </div>
+      </div>
 
         <h2 class="footer__title--secondary">Où nous trouver ?</h2>
-        <img src="" alt="image carte/emplacement en ligne" class="footer__img">
-      </div>
+        <img src="./media/img/map_2.svg" alt="image carte/emplacement en ligne" class="footer__img">
+      
     </footer>
   </main>
   </body>
